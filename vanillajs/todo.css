@@ -1,0 +1,118 @@
+:root {
+    --background: rgb(19, 25, 32);
+    --primaryColor: rgb(33, 33, 77);
+    --secondaryColor: orange;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background)!important;
+}
+
+.todoapp {
+    background-color: var(--primaryColor);
+    width: 500px;
+    height: 600px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: fixed;
+    border-radius: 0.4rem;
+
+}
+
+.addform {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.addform input {
+    height: 40px;
+    outline: none;
+    border: none;
+}
+
+.addform button {
+    color: #fff;
+    background-color: var(--secondaryColor);
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+
+/* the todo items */
+
+.items {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primaryColor);
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    overflow-y: scroll;
+}
+
+.item {
+    width: 100%;
+    height: 50px;
+    max-height: 100px;
+    display: flex;
+    flex-direction: row;
+    color: rgb(34, 34, 34);
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: solid 1px #000;
+}
+.done{
+    background-color: green;
+}
+.notdone{
+    background-color: rgb(134, 31, 0);
+}
+.item .trash {
+    position: absolute;
+    right:5%;
+    background-color: rgb(156, 67, 67);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+
+.btn{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-trash{
+    background-color: rgb(184, 62, 58);
+}
+
+.btn-eye{
+    background-color: rgb(0, 76, 255);
+}
